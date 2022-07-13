@@ -262,3 +262,48 @@ menuToggle.addEventListener('click', () => {
 
 
 //untuk js yang akhir
+
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+
+// ini untuk testimonial
+jQuery(document).ready(function($) {
+  "use strict";
+  //  TESTIMONIALS CAROUSEL HOOK
+  $('#customers-testimonials').owlCarousel({
+      loop: true,
+      center: true,
+      items: 3,
+      margin: 0,
+      autoplay: true,
+      dots:true,
+      autoplayTimeout: 8500,
+      smartSpeed: 450,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1170: {
+          items: 3
+        }
+      }
+  });
+});
