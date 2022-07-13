@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <body style="background-color:#121212  ;">
+  <!-- <body style="background: #1B2838  ;"> -->
     
-  <title>Budidaya</title>
+  <title>VRGBL</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-    <link rel="icon" href="logo.png">
+  <link rel="icon" href="logo.png">
+
    
   <!-- Favicons -->
   <link href="assets/img/logo.png" rel="icon">
@@ -72,9 +73,10 @@
       <nav id="navbar" class="navbar ms-auto">
         <ul>
           <li><a class="nav-link scrollto active" href="#showcase"><b>Showcase</b></a></li>
-          <li><a class="nav-link scrollto" href="#gallery"><b>360 View</b></a></li>
-          <li><a class="nav-link scrollto" href="#ar"><b>About</b></a></li>
-          <li><a class="nav-link scrollto" href="#mission"><b>Requirement</b></a></li>  
+          <li><a class="nav-link scrollto" href="#360"><b>360 View</b></a></li>
+          <li><a class="nav-link scrollto" href="#about"><b>About</b></a></li>
+          <li><a class="nav-link scrollto" href="#requirement"><b>Requirement</b></a></li>  
+          <li><a class="nav-link scrollto" href="#update"><b>Update</b></a></li>  
         </ul>
       </nav>
       <!-- .navbar -->
@@ -86,11 +88,11 @@
 
 <main>
 
-
-
-
-  <!-- ======= Showcase Section ======= -->
-  <section class="showcase">
+<!-- background problem -->
+  <div style="height: 620px;">
+    <!-- ======= Showcase Section ======= -->
+ 
+  <section id="showcase" class="showcase">
     <!-- <div class="logo">
       <a href="index.html"><img src="logo.png" alt="" class="img-fluid"></a>
     </div> -->
@@ -99,27 +101,189 @@
       <h2>Jelajahi Dunia</h2> 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
-      <a href="pitch.html" class="btn btn-primary btn-lg btn-block"></i><b>Coba Sekarang</b></a>
+      <a href="#360" class="btn btn-primary btn-lg btn-block"></i><b>Coba Sekarang</b></a>
     </div>
   </section>
   <!-- ======= End Showcase Section ======= -->
-
-
+ 
+</div>
   
+<div style="height: 2px; background-color:  #37CAEC;"></div>
+  <!-- ======= Hero Section ======= -->
+
+  </section>
+  <!-- --End Hero -->
+  <div style="height: 2px; background-color:  #37CAEC;"></div>
+
+  </div>
+
+ 
+  <div style="height: 2px; background-color:  #37CAEC;"></div>
+<!--  end details -->
+<!-- akhir dari about -->
+
+<!-- BRAND AREA START -->
+<section class="dark">
+	<div class="container py-4">
+		<h1 class="h1 text-center" id="pageHeaderTitle">360 VIEW</h1>
+
+    <!-- awal section video -->
+
+    <article class="postcard dark blue" id="360">
+    
+			<div class="postcard__text">
+				<h1 class="postcard__title blue"><a href="#">360 VIEW</a></h1>
+        <div class="center">
+          <div class="postcard__bar"></div>
+       
+          <div id="player"> 
+            <script src="https://www.youtube.com/iframe_api"></script>
+            <script>
+                let player;
+                let panStarted = false;
+            
+                function onYouTubeIframeAPIReady() {
+                    player = new YT.Player('player', {
+                        videoId: 'zk0QeIkzpRs',
+                        events: {
+                            'onStateChange': onPlayerStateChange
+                        }
+                    });
+                }
+            
+                // Start animation when video starts playing.
+                function onPlayerStateChange(event) {
+                    if (event.data == 1 && !panStarted) {
+                        requestAnimationFrame(panVideo);
+                        panStarted = true;
+                    }
+                }
+            // sampe sini
+            </script>
+            
+          </div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item"><i class="fas fa-tag mr-2"></i>Virtual</li>
+            <li class="tag__item"><i class="fas fa-tag mr-2"></i>Reality</li>
+            <li class="tag__item"><i class="fas fa-tag mr-2"></i>Game</li>
+            <li class="tag__item play blue">
+              <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+			
+		</article>
+ 
+  <!-- akhir section video -->
+
+    <!-- section untuk about -->
+  
+      <article class="postcard dark red" id="about">
+        <a class="postcard__img_link" href="#">
+          <img class="postcard__img" src="about.jpg" alt="Image Title" />	
+        </a>
+        <div class="postcard__text">
+          <h1 class="postcard__title red"><a href="#">About</a></h1>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2022
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item"><i class="fas fa-tag mr-2"></i>VR</li>
+            <li class="tag__item"><i class="fas fa-clock mr-2"></i>Oculus</li>
+          
+          </ul>
+        </div>
+      </article>
+
+   
+	<!-- akhir section about -->
+
+
+<!--  section untuk requirment -->
+   
+      <article class="postcard dark green"  id="requirement" >
+        <a class="postcard__img_link" href="#">
+          <img class="postcard__img" src="vr.png" alt="Image Title" />
+        </a>
+        <div class="postcard__text">
+          <h1 class="postcard__title green"><a href="#">System Requirement</a></h1>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2022
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item"><i class="fas fa-tag mr-2"></i>VR</li>
+            <li class="tag__item"><i class="fas fa-tag mr-2"></i>Bluetooth</li>
+            <li class="tag__item"><i class="fas fa-tag mr-2"></i>WIFI</li>
+            <li class="tag__item"><i class="fas fa-clock mr-2"></i>Device</li>
+          
+          </ul>
+        </div>
+      </article>
+ 
+		<!--  Akhir section untuk requirment -->
+
+
+		<article class="postcard dark yellow" id="update">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="update.jpg" alt="Image Title" />
+			</a>
+			<div class="postcard__text">
+				<h1 class="postcard__title yellow"><a href="#">Update</a></h1>
+				<div class="postcard__subtitle small">
+					<time datetime="2020-05-25 12:00:00">
+						<i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2022
+					</time>
+				</div>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fas fa-tag mr-2"></i>News</li>
+					<li class="tag__item"><i class="fas fa-tag mr-2"></i>Update</li>
+			
+				</ul>
+			</div>
+		</article>
+	</div>
+</section>
+
+</section>
+<!-- BRAND AREA END -->
+
+<!-- awal dari Requirement -->
+<section id="a" class=" align-items-left">
+  <div class="container">
+    <div class="section-title">
+      <h2>FOOTER</p></h2>
+      <p>Bring your Gaming Experience to the Next Level</p>
+    </div>
+        
+    </div>
+ </section>
+ 
+ 
+<!-- akhir dari Requirement -->
+<div style="height: 2px; background-color:  #37CAEC;"></div>
+<div class="context">
+
+</div>
+
+
 </main>
     
-
-  
-  </footer>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src=”https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js”></script>  
   <script src=”https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js”></script> 
-  
-
- 
-
 
 </body>
 
